@@ -77,7 +77,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-    background-color: rgba(216, 133, 249, 0.318);
+    background-color: rgb(239, 202, 255);
 }
 
 input[type=submit] {
