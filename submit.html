@@ -11,23 +11,33 @@
 
 <body>
     <h2>I'll get to it, I swear!</h2>
-    <form>
-        <div>
-            <label for="title">Title:</label><br>
-            <input type="text" name="title"><br>
-        </div>
-        <div>
-            <label for="photo">Photo:</label><br>
-            <input type="text" name="photo"><br><br>
-        </div>
-        <div>
-            <input type="submit" value="Submit"><br><br>
-        </div>
-    </form>
+    <div class="form-box">
+        <form>
+            <div>
+                <label for="title">Title:</label><br>
+                <input type="text" name="title"><br>
+            </div>
+            <div>
+                <label for="photo">Photo:</label><br>
+                <input type="text" name="photo"><br><br>
+            </div>
+            <div>
+                <input type="submit" value="Submit"><br><br>
+            </div>
+        </form>
+    </div>
 
-    <a href="recommend.html" class="button">Next show!</a>
+    <div class="recommend-button">
+        <a href="recommend.html" class="button">Next show!</a>
+    </div>
 
     <script src="submit.js"></script>
 </body>
 
 </html>
+
+<!--
+// Things to add:
+// Check if there are any shows if user clicks "Next show!"
+-->
+
