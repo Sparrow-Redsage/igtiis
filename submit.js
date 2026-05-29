@@ -1,4 +1,4 @@
-const form = document.querySelector('form'), recommend = document.querySelector('.button');
+const form = document.querySelector('form'), recommend = document.querySelector('.recommend-button'), clear = document.querySelector('.clear-button');
 
 let showList = [];
 
@@ -20,10 +20,15 @@ form.addEventListener('submit', (e) => {
 });
 
 recommend.addEventListener('click', (e) => {
-    console.log('clicked');
-    showList = JSON.parse(localStorage.getItem('shows'));
+    if(localStorage.getItem('shows')) {
+        showList = JSON.parse(localStorage.getItem('shows'));
+    }
     if(showList.length === 0) {
         window.alert('No shows to recommend! Add a show first!');
         e.preventDefault();
     }
+});
+
+clear.addEventListener('click', (e) => {
+    localStorage.removeItem('shows');
 });
