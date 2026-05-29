@@ -26,7 +26,4 @@ recommend.addEventListener('click', (e) => {
         window.alert('No shows to recommend! Add a show first!');
         e.preventDefault();
     }
-    else{
-        window.location.href = 'recommend.html';
-    }
 });
