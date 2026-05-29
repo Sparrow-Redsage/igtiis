@@ -12,31 +12,37 @@
 <body>
     <h2>I'll get to it, I swear!</h2>
 
-    <div class="form-box">
-        <div class="instructions">
-            <p>The process is easy!</p>
-            <p>1. Fill out the form with the title and photo URL (optional)</p>
-            <p>2. Click submit</p>
-            <p>3. Click the "Next show!" button to get a recommendation!</p>
+    <div class="page">
+        <div class="form-box">
+            <div class="instructions">
+                <p>The process is easy!</p>
+                <p>1. Fill out the form with the title and photo URL (optional)</p>
+                <p>2. Click submit</p>
+                <p>3. Click the "Next show!" button to get a recommendation!</p>
+            </div>
+
+            <form>
+                <div>
+                    <label for="title">Title:</label><br>
+                    <input type="text" name="title"><br>
+                </div>
+                <div>
+                    <label for="photo">Photo:</label><br>
+                    <input type="text" name="photo"><br><br>
+                </div>
+                <div>
+                    <input type="submit" value="Submit"><br><br>
+                </div>
+            </form>
         </div>
 
-        <form>
-            <div>
-                <label for="title">Title:</label><br>
-                <input type="text" name="title"><br>
-            </div>
-            <div>
-                <label for="photo">Photo:</label><br>
-                <input type="text" name="photo"><br><br>
-            </div>
-            <div>
-                <input type="submit" value="Submit"><br><br>
-            </div>
-        </form>
-    </div>
-
-    <div class="recommend-button">
-        <a href="recommend.html" class="button">Next show!</a>
+        <div class="recommend-button">
+            <a href="recommend.html" class="button">Next show!</a>
+        </div>
+        
+        <div class="clear-button">
+            <a href="#" class="button">Clear all!</a>
+        </div>
     </div>
 
     <script src="submit.js"></script>
