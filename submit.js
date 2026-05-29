@@ -15,4 +15,6 @@ form.addEventListener('submit', (e) => {
     
     const json = JSON.stringify(showList);
     localStorage.setItem('shows', json);
+
+    form.reset();
 });
