@@ -1,13 +1,11 @@
 const form = document.querySelector('form');
 
-
-
 let showList = [];
 
 form.addEventListener('submit', (e) => {
     if(localStorage.getItem('shows')) {
-        let localStorageJson = localStorage.getItem('shows');
-        showList = JSON.parse(localStorageJson);
+        let localStorageJson = JSON.parse(localStorage.getItem('shows'));
+        showList = localStorageJson;
     }
 
     e.preventDefault();
@@ -15,7 +13,6 @@ form.addEventListener('submit', (e) => {
     const obj = Object.fromEntries(formData);
     showList.push(obj);
     
-
     const json = JSON.stringify(showList);
     localStorage.setItem('shows', json);
 });
